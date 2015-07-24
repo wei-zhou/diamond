@@ -1,0 +1,43 @@
+﻿<div id="diamond-history" class="row">
+    <div class="col-md-12">
+        <form class="form-inline">
+            <fieldset>
+                <div class="form-group">
+                    <label for="diamond-history-from">导入日期从</label>
+                    <input id="diamond-history-from" type="date" readonly="readonly" class="form-control input-sm" />
+                </div>
+                <div class="form-group">
+                    <label for="diamond-history-to">到</label>
+                    <input id="diamond-history-to" type="date" readonly="readonly" class="form-control input-sm" />
+                </div>
+                <div class="form-group">
+                    <label for="diamond-history-person">导入人</label>
+                    <select class="form-control input-sm" id="diamond-history-person">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" id="diamond-history-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查询</button>
+            </fieldset>
+        </form>
+        <div class="table-responsive">
+            <table id="diamond-history-result" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr><th>导入日期</th><th>导入人</th><th>导入数量</th></tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">
+                            <nav>
+                                <ul class="pager">
+                                    <li><a id="diamond-history-prev" href="javascript:void(0)">上一页</a></li>
+                                    <li><a id="diamond-history-next" href="javascript:void(0)">下一页</a></li>
+                                </ul>
+                            </nav>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

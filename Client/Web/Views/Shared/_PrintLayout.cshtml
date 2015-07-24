@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="周巍" />
+    <meta name="description" content="帝梵芮珠宝非洲之心客户端" />
+    <title>帝梵芮珠宝非洲之心打印售后服务卡</title>
+    <link href="/favicon.ico" rel="icon" />
+    <link href="/content/print.min.css" rel="stylesheet" />
+    @RenderSection("styles", false)
+</head>
+<body>
+    @RenderBody()
+    <script src="/scripts/jquery-1.11.2.min.js"></script>
+    <script src="/scripts/odatajs-4.0.0.min.js"></script>
+    @if (ConfigurationHelper.IsProductionEnvironment)
+    {
+        <script src="/scripts/common.min.js?v=@ConfigurationHelper.ProductVersion"></script>
+        <script src="/scripts/print.min.js?v=@ConfigurationHelper.ProductVersion"></script>
+    }
+    else
+    {
+        <script src="/scripts/common.js?v=@ConfigurationHelper.ProductVersion"></script>
+        <script src="/scripts/print.js?v=@ConfigurationHelper.ProductVersion"></script>
+    }
+    @RenderSection("scripts", false)
+</body>
+</html>

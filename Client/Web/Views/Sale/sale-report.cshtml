@@ -1,0 +1,30 @@
+﻿<div class="modal fade" id="sale-report" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="sale-report-from">销售日期从</label>
+                                    <input id="sale-report-from" type="date" readonly="readonly" class="form-control input-sm" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="sale-report-to">到</label>
+                                    <input id="sale-report-to" type="date" readonly="readonly" class="form-control input-sm" />
+                                </div>
+                                <button type="button" class="btn btn-primary btn-sm" id="sale-report-view"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 执行</button>
+                                <button type="button" class="btn btn-warning btn-sm" id="sale-report-cancel"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> 取消</button>
+                            </fieldset>
+                        </form>
+                        @Html.Partial("~/Views/Home/SsisControl.cshtml", new SsisControlModel() { HtmlIdPrefix = "sale-report" })
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿<Page x:Class="Home.FakeDataPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:home="clr-namespace:Home"
+      Title="Generate Fake Data">
+    <Page.Resources>
+        <Style x:Key="LayoutPanelStyle" TargetType="{x:Type Grid}">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Page.Resources>
+
+    <Page.CommandBindings>
+        <CommandBinding Command="home:FakeDataPage.GenerateCommand" Executed="Generate_Executed" />
+    </Page.CommandBindings>
+
+    <Grid Style="{StaticResource ResourceKey=LayoutPanelStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Button Command="home:FakeDataPage.GenerateCommand" Content="Generate Fake Data" />
+    </Grid>
+</Page>

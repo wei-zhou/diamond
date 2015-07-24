@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="周巍" />
+    <meta name="description" content="帝梵芮珠宝非洲之心客户端" />
+    <title>帝梵芮珠宝非洲之心客户端</title>
+    <link href="/favicon.ico" rel="icon" />
+    <link href="/content/themes/base/all.css" rel="stylesheet" />
+    <link href="/content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/content/bootstrap-theme.min.css" rel="stylesheet" />
+    @if (ConfigurationHelper.IsProductionEnvironment)
+    {
+        <link href="/content/common.min.css?v=@ConfigurationHelper.ProductVersion" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="/content/common.css?v=@ConfigurationHelper.ProductVersion" rel="stylesheet" />
+    }
+    @RenderSection("styles", false)
+    <link href="/content/normalize.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="/scripts/html5shiv.min.js"></script>
+      <script src="/scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    @RenderBody()
+    <script src="/scripts/jquery-1.11.2.min.js"></script>
+    <script src="/scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="/scripts/jquery-ui-i18n.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/ie10-viewport-bug-workaround.js"></script>
+    <script src="/scripts/odatajs-4.0.0.min.js"></script>
+    @if (ConfigurationHelper.IsProductionEnvironment)
+    {
+        <script src="/scripts/common.min.js?v=@ConfigurationHelper.ProductVersion"></script>
+    }
+    else
+    {
+        <script src="/scripts/common.js?v=@ConfigurationHelper.ProductVersion"></script>
+    }
+    @RenderSection("scripts", false)
+</body>
+</html>

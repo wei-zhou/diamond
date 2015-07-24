@@ -1,0 +1,44 @@
+﻿<div id="sale-management" class="row">
+    <div class="col-md-12">
+        <form class="form-inline">
+            <fieldset>
+                <div class="form-group">
+                    <label for="sale-management-from">销售日期从</label>
+                    <input id="sale-management-from" type="date" readonly="readonly" class="form-control input-sm" />
+                </div>
+                <div class="form-group">
+                    <label for="sale-management-to">到</label>
+                    <input id="sale-management-to" type="date" readonly="readonly" class="form-control input-sm" />
+                </div>
+                <div class="form-group">
+                    <label for="sale-management-sale-person">销售人</label>
+                    <select class="form-control input-sm" id="sale-management-sale-person">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" id="sale-management-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查询</button>
+                <button type="button" class="btn btn-success btn-sm" id="sale-management-report"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 报表</button>
+            </fieldset>
+        </form>
+        <div class="table-responsive">
+            <table id="sale-management-result" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr><th>收据编号</th><th>客户</th><th>联系方式</th><th>总额</th><th>销售人</th><th>销售日期</th><th>最后修改日期</th></tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7">
+                            <nav>
+                                <ul class="pager">
+                                    <li><a id="sale-management-prev" href="javascript:void(0)">上一页</a></li>
+                                    <li><a id="sale-management-next" href="javascript:void(0)">下一页</a></li>
+                                </ul>
+                            </nav>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

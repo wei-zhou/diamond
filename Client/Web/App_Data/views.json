@@ -1,0 +1,19 @@
+﻿[
+    { "name": "control-panel",       "roles": [ "Manager", "Employee" ], "view": "~/Views/System/control-panel.cshtml" },
+    { "name": "customer-management", "roles": [ "Manager"             ], "view": "~/Views/Customer/customer-management.cshtml" },
+    { "name": "help-page",           "roles": [ "Manager", "Employee" ], "view": "~/Views/Help/help-page.cshtml" },
+
+    { "name": "dashboard-page",      "roles": [ "Manager", "Employee" ], "view": "~/Views/Dashboard/dashboard-page.cshtml" },
+    { "name": "print-receipt",       "roles": [ "Manager", "Employee" ], "view": "~/Views/Dashboard/print-receipt.cshtml" },
+    { "name": "print-sale",          "roles": [ "Manager", "Employee" ], "view": "~/Views/Dashboard/print-sale.cshtml" },
+    { "name": "print-service",       "roles": [ "Manager", "Employee" ], "view": "~/Views/Dashboard/print-service.cshtml" },
+
+    { "name": "sale-management",     "roles": [ "Manager"             ], "view": "~/Views/Sale/sale-management.cshtml" },
+    { "name": "sale-view",           "roles": [ "Manager"             ], "view": "~/Views/Sale/sale-view.cshtml" },
+    { "name": "sale-report",         "roles": [ "Manager"             ], "view": "~/Views/Sale/sale-report.cshtml" },
+
+    { "name": "product-management",  "roles": [ "Manager", "Employee" ], "view": "~/Views/Product/product-management.cshtml" },
+    { "name": "diamond-history",     "roles": [ "Manager", "Employee" ], "view": "~/Views/Product/Diamond/diamond-history.cshtml" },
+    { "name": "diamond-import",      "roles": [ "Manager", "Employee" ], "view": "~/Views/Product/Diamond/diamond-import.cshtml" },
+    { "name": "diamond-on-sale",     "roles": [ "Manager", "Employee" ], "view": "~/Views/Product/Diamond/diamond-on-sale.cshtml" }
+]

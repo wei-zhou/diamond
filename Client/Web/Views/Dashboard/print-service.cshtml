@@ -1,0 +1,36 @@
+﻿@{ Layout = "~/Views/Shared/_PrintLayout.cshtml"; }
+<div class="content" id="print-service">
+    <div style="top: 2.0cm; left: 8.8cm; max-width: 4.5cm;" id="number"></div>
+    <div style="top: 2.7cm; left: 8.0cm;" id="year"></div>
+    <div style="top: 2.7cm; left: 9.9cm;" id="month"></div>
+    <div style="top: 2.7cm; left: 10.8cm;" id="day"></div>
+    <div style="top: 3.8cm; left: 0.5cm;" id="other"></div>
+    <div style="top: 4.5cm; left: 0.5cm; max-width: 4.5cm;" id="female-ring"></div>
+    <div style="top: 4.5cm; left: 7.0cm; max-width: 4.5cm;" id="male-ring"></div>
+    <div style="top: 5.2cm; left: 0.5cm; max-width: 4.5cm;" id="match-ring"></div>
+    <div style="top: 5.2cm; left: 7.0cm; max-width: 4.5cm;" id="pendant"></div>
+    <div style="top: 6.0cm; left: 0.5cm; max-width: 4.5cm;" id="bracelet"></div>
+    <div style="top: 6.0cm; left: 7.0cm; max-width: 4.5cm;" id="earnail"></div>
+    <div style="top: 6.8cm; left: 1.0cm; max-width: 4.0cm;" id="certificate"></div>
+    <div style="top: 6.8cm; left: 6.7cm; max-width: 2.0cm;" id="caret"></div>
+    <div style="top: 6.8cm; left: 9.8cm; max-width: 2.0cm;" id="cut"></div>
+    <div style="top: 7.6cm; left: 6.7cm; max-width: 2.0cm;" id="clarity"></div>
+    <div style="top: 7.6cm; left: 9.8cm; max-width: 2.0cm;" id="color"></div>
+    <div style="top: 2.5cm; left: 15cm; max-width: 4.0cm;" id="stub-customer-name"></div>
+    <div style="top: 3.2cm; left: 15cm; max-width: 4.0cm;" id="stub-customer-phone"></div>
+    <div style="top: 3.9cm; left: 15cm; max-width: 4.0cm;" id="stub-customer-email"></div>
+    <div style="top: 4.6cm; left: 15cm; max-width: 4.0cm;" id="stub-product-name"></div>
+    <div style="top: 5.3cm; left: 15cm; max-width: 4.0cm;" id="stub-certificate"></div>
+    <div style="top: 6.0cm; left: 14cm; max-width: 1.8cm;" id="stub-caret"></div>
+    <div style="top: 6.0cm; left: 17cm; max-width: 1.8cm;" id="stub-clarity"></div>
+    <div style="top: 6.7cm; left: 17cm; max-width: 1.8cm;" id="stub-cut"></div>
+    <div style="top: 6.7cm; left: 17cm; max-width: 1.8cm;" id="stub-color"></div>
+    <div style="top: 7.4cm; left: 16cm;" id="stub-number"></div>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $home.print["print-service"].init();
+        });
+    </script>
+}

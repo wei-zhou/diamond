@@ -1,0 +1,49 @@
+﻿<Page x:Class="Home.DateDimensionDataPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:home="clr-namespace:Home"
+      Title="Generate Date Dimension Data"
+      x:Name="Me">
+    <Page.Resources>
+        <Style x:Key="LayoutPanelStyle" TargetType="{x:Type Grid}">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+
+        <Style x:Key="TextStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+        <Style x:Key="DatePickerStyle" TargetType="{x:Type DatePicker}">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Page.Resources>
+
+    <Page.CommandBindings>
+        <CommandBinding Command="home:DateDimensionDataPage.GenerateCommand" Executed="Generate_Executed" />
+    </Page.CommandBindings>
+
+    <Grid Style="{StaticResource ResourceKey=LayoutPanelStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="开始日期" 
+                   Style="{StaticResource ResourceKey=TextStyle}" Grid.Row="0" Grid.Column="0" />
+        <DatePicker SelectedDate="{Binding ElementName=Me, Mode=OneWayToSource, Path=StartDate}" 
+                    Style="{StaticResource ResourceKey=DatePickerStyle}" Grid.Row="0" Grid.Column="1" />
+
+        <TextBlock Text="结束日期" 
+                   Style="{StaticResource ResourceKey=TextStyle}" Grid.Row="1" Grid.Column="0" />
+        <DatePicker SelectedDate="{Binding ElementName=Me, Mode=OneWayToSource, Path=EndDate}" 
+                    Style="{StaticResource ResourceKey=DatePickerStyle}" Grid.Row="1" Grid.Column="1" />
+
+        <Button Command="home:DateDimensionDataPage.GenerateCommand" Content="Generate Date Dimension Data"
+                Grid.Row="2" Grid.Column="0" />
+    </Grid>
+</Page>

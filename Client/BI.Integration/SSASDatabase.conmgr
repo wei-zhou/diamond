@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SSASDatabase"
+  DTS:DTSID="{AAA8AD92-15A6-4409-AE7C-F63D33A3435D}"
+  DTS:CreationName="MSOLAP100">
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::ServerName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=Diamond;Provider=MSOLAP.6;Integrated Security=SSPI;Impersonation Level=Impersonate;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,86 @@
+﻿/* timeout */
+
+.home-timeout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background-color: rgba(34,34,34,0.6);
+}
+
+    .home-timeout > div {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        color: #eee;
+        background-color: #222;
+        text-align: center;
+    }
+
+/* table pager */
+
+.table > tfoot > tr > th > nav > ul.pager {
+    margin: 0;
+}
+
+/* modal footer button and anchor */
+
+@media (max-width: 767px) {
+    .modal > .modal-dialog > .modal-content > .modal-footer > a,
+    .modal > .modal-dialog > .modal-content > .modal-footer > button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* indeterminable progress bar */
+
+.progress > .progress-bar.home-indeterminable {
+    width: 100%;
+}
+
+/* override */
+
+.modal table {
+    margin-bottom: 0 !important;
+}
+
+a.disabled {
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* index */
+
+body > div.container-fluid {
+    margin-top: 30px;
+}
+
+/* print-sale */
+
+#print-sale .quantity {
+    text-align: center;
+}
+
+#print-sale .price {
+    text-align: right;
+}
+
+#print-sale .edit {
+    width: 48px;
+}
+
+    #print-sale .edit a:first-child {
+        margin-right: 5px;
+    }
+
+/* product management */
+
+#product-management a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

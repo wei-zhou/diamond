@@ -1,0 +1,46 @@
+﻿<div class="modal fade" id="diamond-import" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="diamond-import-file">上传裸钻数据</label>
+                                    <input type="file" id="diamond-import-file" style="width: 100%;">
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label class="radio-inline" for="diamond-import-append">
+                                        <input type="radio" name="diamond-import-type" id="diamond-import-append" value="Append"> 添加
+                                    </label>
+                                    <label class="radio-inline" for="diamond-import-replace">
+                                        <input type="radio" name="diamond-import-type" id="diamond-import-replace" value="Replace"> 替换
+                                    </label>
+                                    <label class="radio-inline" for="diamond-import-update">
+                                        <input type="radio" name="diamond-import-type" id="diamond-import-update" value="Update"> 修改
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-sm" id="diamond-import-upload"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span> 上传</button>
+                            </fieldset>
+                        </form>
+                        <div id="diamond-import-running" class="panel panel-default">
+                            <div class="panel-body">
+                                <p class="text-info">裸钻数据正在上传中，请稍等……</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active home-indeterminable" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="sr-only">正在运行中</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>

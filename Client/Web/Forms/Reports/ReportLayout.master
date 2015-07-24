@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Forms/Layout.Master" AutoEventWireup="true" CodeBehind="ReportLayout.master.cs" Inherits="Home.Forms.Reports.ReportLayout" %>
+<asp:Content ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ContentPlaceHolderID="BodyContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server" />
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ScriptContentPlaceHolder" runat="server">
+</asp:Content>

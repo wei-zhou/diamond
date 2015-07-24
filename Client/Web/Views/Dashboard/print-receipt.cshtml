@@ -1,0 +1,60 @@
+﻿@{ Layout = "~/Views/Shared/_PrintLayout.cshtml"; }
+<div class="content" id="print-receipt">
+    <h1>帝梵芮珠宝零售统一收据</h1>
+    <div style="display: table; width: 100%; margin: 0 0 .1cm;">
+        <div style="display: table-cell; width: 70%;">
+            <span class="label">收据编号<br /><small>RECEIPT CODE</small></span>
+            <span class="value" id="number"></span>
+        </div>
+        <div style="display: table-cell; width: 30%;">
+            <span class="label">开据日期<br /><small>DATE ISSUED</small></span>
+            <span class="value" id="date"></span>
+        </div>
+    </div>
+    <div style="border: 1px solid #000;">
+        <div style="margin: .1cm 0;">
+            <span class="label">付款单位（个人）<br /><small>PAYER</small></span>
+            <span class="value" id="payer"></span>
+        </div>
+        <table id="details">
+            <thead>
+                <tr>
+                    <th style="width: 85%;">经营项目<br /><small>SERVICE ITEM</small></th>
+                    <th style="width: 5%;">数量<br /><small>QUANTITY</small></th>
+                    <th style="width: 10%;">金额<br /><small>AMOUNT</small></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div style="display: table; width: 100%; margin: .1cm 0;">
+            <div style="display: table-cell; width: 90%; border-left: 1px solid #000;">
+                <span class="label">合计金额（大写）<br /><small>TOTAL IN CAPITAL</small></span>
+                <span class="value" id="capital"></span>
+            </div>
+            <div style="display: table-cell; width: 10%; vertical-align: middle;">
+                <span class="label">￥</span>
+                <span class="value" id="lowercase"></span>
+            </div>
+        </div>
+    </div>
+    <div style="display: table; width: 100%; margin: .1cm 0 0;">
+        <div style="display: table-cell; width: 50%;">
+            <span class="label">收款单位（盖章有效）<br /><small>PAYEE (SEAL)</small></span>
+        </div>
+        <div style="display: table-cell; width: 25%;">
+            <span class="label">收款人<br /><small>ISSUED BY</small></span>
+            <span class="value" id="payee"></span>
+        </div>
+        <div style="display: table-cell; width: 25%;">
+            <span class="label">开票人<br /><small>DRAWER</small></span>
+            <span class="value" id="worker"></span>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $home.print["print-receipt"].init();
+        });
+    </script>
+}

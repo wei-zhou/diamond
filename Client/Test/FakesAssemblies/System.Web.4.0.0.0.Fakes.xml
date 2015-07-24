@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Fakes.ShimHttpPostedFileWrapper">
+            <summary>Shim type of System.Web.HttpPostedFileWrapper</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpPostedFileWrapper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpPostedFileWrapper.#ctor(System.Web.HttpPostedFileWrapper)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpPostedFileWrapper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Fakes.ShimHttpPostedFileWrapper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.ConstructorHttpPostedFile">
+            <summary>Sets the shim of HttpPostedFileWrapper.HttpPostedFileWrapper(HttpPostedFile httpPostedFile)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.ContentLengthGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_ContentLength()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.ContentTypeGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_ContentType()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.FileNameGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_FileName()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.InputStreamGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_InputStream()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.SaveAsString">
+            <summary>Sets the shim of HttpPostedFileWrapper.SaveAs(String filename)</summary>
+        </member>
+        <member name="T:System.Web.Fakes.ShimHttpPostedFileWrapper.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.AllInstances.ContentLengthGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_ContentLength()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.AllInstances.ContentTypeGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_ContentType()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.AllInstances.FileNameGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_FileName()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.AllInstances.InputStreamGet">
+            <summary>Sets the shim of HttpPostedFileWrapper.get_InputStream()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.ShimHttpPostedFileWrapper.AllInstances.SaveAsString">
+            <summary>Sets the shim of HttpPostedFileWrapper.SaveAs(String filename)</summary>
+        </member>
+        <member name="T:System.Web.Fakes.StubHttpPostedFileWrapper">
+            <summary>Stub type of System.Web.HttpPostedFileWrapper</summary>
+        </member>
+        <member name="M:System.Web.Fakes.StubHttpPostedFileWrapper.#ctor(System.Web.HttpPostedFile)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="F:System.Web.Fakes.StubHttpPostedFileWrapper.ContentLengthGet">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_ContentLength()</summary>
+        </member>
+        <member name="F:System.Web.Fakes.StubHttpPostedFileWrapper.ContentTypeGet">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_ContentType()</summary>
+        </member>
+        <member name="F:System.Web.Fakes.StubHttpPostedFileWrapper.FileNameGet">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_FileName()</summary>
+        </member>
+        <member name="M:System.Web.Fakes.StubHttpPostedFileWrapper.InitializeStub">
+            <summary>Initializes a new instance of type StubHttpPostedFileWrapper</summary>
+        </member>
+        <member name="F:System.Web.Fakes.StubHttpPostedFileWrapper.InputStreamGet">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_InputStream()</summary>
+        </member>
+        <member name="M:System.Web.Fakes.StubHttpPostedFileWrapper.SaveAs(System.String)">
+            <summary>Sets the stub of HttpPostedFileWrapper.SaveAs(String filename)</summary>
+        </member>
+        <member name="F:System.Web.Fakes.StubHttpPostedFileWrapper.SaveAsString">
+            <summary>Sets the stub of HttpPostedFileWrapper.SaveAs(String filename)</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.ContentLength">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_ContentLength()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.ContentType">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_ContentType()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.FileName">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_FileName()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.InputStream">
+            <summary>Sets the stub of HttpPostedFileWrapper.get_InputStream()</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Web.Fakes.StubHttpPostedFileWrapper.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

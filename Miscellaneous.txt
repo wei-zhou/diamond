@@ -1,0 +1,19 @@
+// Machine key generate code
+// For SHA1, set the validationKey to 64 bytes (128 hexadecimal characters).
+// For AES, set the decryptionKey to 32 bytes (64 hexadecimal characters).
+// For 3DES, set the decryptionKey to 24 bytes (48 hexadecimal characters).
+const int Length = 128;
+var buffer = new byte[Length / 2];
+using (var crypto = new RNGCryptoServiceProvider())
+{
+    crypto.GetBytes(buffer);
+    var key = new StringBuilder(Length);
+    for (var i = 0; i < buffer.Length; i++)
+    {
+        key.Append(string.Format("{0:X2}", buffer[i]));
+    }
+    Console.WriteLine(key);
+}
+
+PK_Date	Date_Name	Year	Year_Name	Half_Year	Half_Year_Name	Quarter	Quarter_Name	Month	Month_Name	Week	Week_Name	Day_Of_Year	Day_Of_Year_Name	Day_Of_Half_Year	Day_Of_Half_Year_Name	Day_Of_Quarter	Day_Of_Quarter_Name	Day_Of_Month	Day_Of_Month_Name	Day_Of_Week	Day_Of_Week_Name	Week_Of_Year	Week_Of_Year_Name	Month_Of_Year	Month_Of_Year_Name	Month_Of_Half_Year	Month_Of_Half_Year_Name	Month_Of_Quarter	Month_Of_Quarter_Name	Quarter_Of_Year	Quarter_Of_Year_Name	Quarter_Of_Half_Year	Quarter_Of_Half_Year_Name	Half_Year_Of_Year	Half_Year_Of_Year_Name	Fiscal_Year	Fiscal_Year_Name	Fiscal_Half_Year	Fiscal_Half_Year_Name	Fiscal_Quarter	Fiscal_Quarter_Name	Fiscal_Month	Fiscal_Month_Name	Fiscal_Week	Fiscal_Week_Name	Fiscal_Day	Fiscal_Day_Name	Fiscal_Day_Of_Year	Fiscal_Day_Of_Year_Name	Fiscal_Day_Of_Half_Year	Fiscal_Day_Of_Half_Year_Name	Fiscal_Day_Of_Quarter	Fiscal_Day_Of_Quarter_Name	Fiscal_Day_Of_Month	Fiscal_Day_Of_Month_Name	Fiscal_Day_Of_Week	Fiscal_Day_Of_Week_Name	Fiscal_Week_Of_Year	Fiscal_Week_Of_Year_Name	Fiscal_Month_Of_Year	Fiscal_Month_Of_Year_Name	Fiscal_Month_Of_Half_Year	Fiscal_Month_Of_Half_Year_Name	Fiscal_Month_Of_Quarter	Fiscal_Month_Of_Quarter_Name	Fiscal_Quarter_Of_Year	Fiscal_Quarter_Of_Year_Name	Fiscal_Quarter_Of_Half_Year	Fiscal_Quarter_Of_Half_Year_Name	Fiscal_Half_Year_Of_Year	Fiscal_Half_Year_Of_Year_Name
+2015-01-01 00:00:00.000	Thursday, January 01 2015	2015-01-01 00:00:00.000	Calendar 2015	2015-01-01 00:00:00.000	Semester 1, 2015	2015-01-01 00:00:00.000	Quarter 1, 2015	2015-01-01 00:00:00.000	January 2015	2015-01-01 00:00:00.000	Week 1, 2015	1	Day 1	1	Day 1	1	Day 1	1	Day 1	5	Day 5	1	Week 1	1	Month 1	1	Month 1	1	Month 1	1	Quarter 1	1	Quarter 1	1	Semester 1	2015-01-01 00:00:00.000	Fiscal Calendar 2015	2015-01-01 00:00:00.000	Fiscal Semester 1, 2015	2015-01-01 00:00:00.000	Fiscal Quarter 1, 2015	2015-01-01 00:00:00.000	Fiscal January, 2015	2015-01-01 00:00:00.000	Fiscal Week 1, 2015	2015-01-01 00:00:00.000	Thursday, January 01 2015	1	Day 1	1	Day 1	1	Day 1	1	Day 1	5	Day 5	1	Week 1	1	Month 1	1	Month 1	1	Month 1	1	Quarter 1	1	Quarter 1	1	Semester 1

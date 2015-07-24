@@ -1,0 +1,24 @@
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+@RenderBody()
+@section styles {
+    @if (ConfigurationHelper.IsProductionEnvironment)
+    {
+        <link href="/content/public.min.css?v=@ConfigurationHelper.ProductVersion" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="/content/public.css?v=@ConfigurationHelper.ProductVersion" rel="stylesheet" />
+    }
+    @RenderSection("styles", false)
+}
+@section scripts {
+    @if (ConfigurationHelper.IsProductionEnvironment)
+    {
+        <script src="/scripts/public.min.js?v=@ConfigurationHelper.ProductVersion"></script>
+    }
+    else
+    {
+        <script src="/scripts/public.js?v=@ConfigurationHelper.ProductVersion"></script>
+    }
+    @RenderSection("scripts", false)
+}

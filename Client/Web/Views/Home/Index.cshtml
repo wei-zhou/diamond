@@ -1,0 +1,49 @@
+﻿@{ Layout = "~/Views/Shared/_PrivateLayout.cshtml"; }
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">导航切换</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">帝梵芮非洲之心客户端</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-left" id="navigator">
+                <li><a href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">销售管理</a></li>
+                @*<li><a href="javascript:void(0)">客户管理</a></li>*@
+                <li><a href="javascript:void(0)">商品管理</a></li>
+                @*<li><a href="javascript:void(0)">系统设置</a></li>*@
+                @*<li><a href="javascript:void(0)">帮助</a></li>*@
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="user">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span id="identity"></span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:void(0)" id="logout">注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <header class="page-header">
+        <h1></h1>
+    </header>
+    <div id="content"></div>
+</div>
+<footer class="home-footer">
+    <div class="container-fluid">
+        <p class="text-muted">&copy; @DateTime.Now.Year - 上海帝梵芮珠宝有限公司</p>
+        <ul class="list-inline">
+            <li><a href="http://glyphicons.com/" target="_blank">GLYPHICONS.com</a></li>
+            @*<!-- CC-BY 3.0 is used by glyphicons, but not bootstrap --> <li><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported (CC BY 3.0)</a></li>*@
+        </ul>
+    </div>
+</footer>
+<div id="dialog"></div>
+<form id="logout-form" action="/account/logout" method="post" class="invisible">@Html.AntiForgeryToken()@Html.AjaxAntiForgeryToken()</form>
